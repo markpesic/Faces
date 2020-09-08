@@ -1,0 +1,2 @@
+-Add a way to encrypt images and decrypt them so no one can access it https://stackoverflow.com/questions/37240332/how-to-secure-users-images-on-a-server
+-modify the way we store images maybe a second model dedicated only to images
