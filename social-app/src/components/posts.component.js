@@ -20,8 +20,8 @@ function Posts() {
 						setRealPost(
 							res.data.sort(
 								(a, b) =>
-									Date(a.timeStamp).valueOf() -
-									Date(b.timeStamp).valueOf()
+									new Date(b.timeStamp).valueOf() -
+									new Date(a.timeStamp).valueOf()
 							)
 						);
 				})

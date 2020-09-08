@@ -20,7 +20,13 @@ function Profile(props) {
 			)
 				.then((res) => {
 					console.log(res);
-					setRealPosts(res.data);
+					setRealPosts(
+						res.data.sort(
+							(a, b) =>
+								new Date(b.date).valueOf() -
+								new Date(a.date).valueOf()
+						)
+					);
 				})
 				.catch((e) => {
 					console.log(e);
